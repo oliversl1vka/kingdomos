@@ -1,12 +1,12 @@
-# KingdomOS
+#KingdomOS
 
 Final project for the Building AI course
 
-## Summary
+##Summary
 
 KingdomOS is an AI agent orchestration system built around a medieval kingdom metaphor. It helps teams coordinate autonomous and semi-autonomous AI workflows through a structured CLI and dashboard-driven experience.
 
-## Background
+##Background
 
 AI-assisted development and automation often become difficult to manage once a project grows beyond a few prompts or one-off scripts. KingdomOS is designed to solve problems like:
 
@@ -18,7 +18,7 @@ AI-assisted development and automation often become difficult to manage once a p
 
 This project is important because AI systems are increasingly used in production-like workflows, where reliability, transparency, and coordination matter as much as raw capability.
 
-## How is it used?
+##How is it used?
 
 KingdomOS is used in a local development or workspace context by developers, AI tool builders, platform engineers, and project leads.
 
@@ -33,7 +33,7 @@ Typical use looks like this:
 
 The system is useful anywhere long-running AI work needs structure, visibility, and recovery.
 
-## Data sources and AI methods
+##Data sources and AI methods
 
 KingdomOS depends on several kinds of data:
 
@@ -54,7 +54,7 @@ AI methods that are likely useful include:
 
 The repository also suggests a command-driven workflow for initializing, configuring, executing, monitoring, and repairing AI tasks.
 
-## Challenges
+##Challenges
 
 KingdomOS does not solve everything. Key limitations include:
 
@@ -64,7 +64,7 @@ KingdomOS does not solve everything. Key limitations include:
 - the system cannot guarantee correctness of generated code or decisions
 - some projects may need stronger policy, security, or approval layers
 
-## What next?
+##What next?
 
 Possible future improvements include:
 
@@ -76,7 +76,7 @@ Possible future improvements include:
 - deeper integrations with source control and developer tools
 - better automated validation of agent outputs and acceptance criteria
 
-## Acknowledgments
+##Acknowledgments
 
 This project appears to draw on open-source tools and ideas including:
 
