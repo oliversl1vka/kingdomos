@@ -1,0 +1,25 @@
+{
+  "name": "@kingdomos/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "KingdomOS core: capability contracts, model registry, provider interface, agent types",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

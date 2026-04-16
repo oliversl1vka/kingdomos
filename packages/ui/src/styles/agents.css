@@ -1,0 +1,130 @@
+.agents-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.25rem;
+  min-height: 100%;
+}
+
+/* Header */
+.agents-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.agents-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.agents-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.roam-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.click-hint {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+/* Layout */
+.agents-layout {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Sidebar */
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.agent-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.15s, background 0.15s;
+  text-align: left;
+}
+
+.agent-card:hover {
+  background: var(--color-surface-2);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.agent-card.selected {
+  border-color: var(--agent-color, var(--color-accent));
+  background: color-mix(in srgb, var(--agent-color, var(--color-accent)) 12%, var(--color-surface));
+}
+
+.agent-card-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--agent-color, var(--color-accent));
+  flex-shrink: 0;
+}
+
+.agent-card-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.agent-card-role {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  text-transform: capitalize;
+}
+
+/* Canvas */
+.canvas-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.agents-canvas {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  display: block;
+  cursor: crosshair;
+  background: #1a1a2e;
+}
+
+.canvas-legend {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}

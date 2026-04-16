@@ -1,0 +1,20 @@
+{
+  "name": "kingdomos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI agent orchestration system with medieval kingdom metaphor",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
